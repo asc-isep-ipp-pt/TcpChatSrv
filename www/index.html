@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TCP Chat Web UI</title>
+    <script src="tcpchat.js"></script>
+</head>
+<body bgcolor="#d3d3d3" onLoad="refreshMessages()">
+<img src="SWitCH.png" />
+<img src="isep.png" />
+<h1>TCP Chat Server Web UI v1.1</h1>
+<p>Your Nickname: <input id="nickname" type="text" />
+    <input id="setnick" type="button" value="Set Nick" onclick="setNick()"/></p>
+<p>Send message: <input id="message" type="text" size="80" disabled="true" onkeydown="enterKey(event)"/></p>
+<hr />
+<div id="messages">
+    <p>Loading messages from server ...</p>
+</div>
+<hr />
+</body>
+</html>
